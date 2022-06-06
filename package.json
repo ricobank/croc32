@@ -1,0 +1,12 @@
+{
+  "name": "croc32",
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "base32.js": "^0.1.0",
+    "coreword": "^0.0.6"
+  },
+  "devDependencies": {
+    "tapzero": "^0.6.1"
+  }
+}
