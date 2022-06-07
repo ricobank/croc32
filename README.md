@@ -3,7 +3,7 @@
 
 Crockford base32 with letter-case checksums similar to ETH addresses.
 
-1. Take crockford base32 of value https://github.com/speakeasyjs/base32.js
+1. Take [crockford base32](https://www.crockford.com/base32.html) of value (e.g. [base32.js](https://github.com/speakeasyjs/base32.js)
 2. Take hash of value (keccak256)
 3. Uppercase Nth letter of encoded string if bit 0 of byte N of hash is 1
 
