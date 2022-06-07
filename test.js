@@ -18,3 +18,20 @@ test('croc32', t=>{
     t.ok(bleq(hello, dec(enc(hello, true), true)))
     t.ok(bleq(hello, dec(enc(hello, false), false)))
 })
+
+test('examples', t=>{
+    console.log('== ascii ==')
+    let str=x=>console.log(`${x}\n${enc(buf(x))}\n`)
+    str('hi')
+    str('hii')
+    str('hiii')
+    str('hiiii')
+
+    console.log('== hex ==')
+    let hex=x=>console.log(`${x}\n${enc(Buffer.from(x, 'hex'))}\n`)
+    hex('12')
+    hex('1234')
+    hex('1234FF')
+    hex('ff'.repeat(32))
+    hex('00'.repeat(32))
+})
